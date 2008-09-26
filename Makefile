@@ -20,7 +20,7 @@ $(main.FILE): #FORCE
 	@if test "$$(sha1sum $@ | awk '{print $$1}')" != "$(main.SHA1SUM)" ; then \
 	    echo "sha1sum of the downloaded $@ does not match the one from 'sources' file" ; \
 	    echo "Local copy: $$(sha1sum $@)" ; \
-	    echo "In sources: $$(grep $@ sources)" ; \
+	    echo "In sources: $(main.SHA1SUM)" ; \
 	    exit 1 ; \
 	else \
 	    ls -l $@ ; \
