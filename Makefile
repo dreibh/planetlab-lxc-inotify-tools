@@ -8,7 +8,7 @@ SPECFILE = inotify-tools.spec
 version=3.13
 
 main.URL	:= http://mirror.onelab.eu/third-party/inotify-tools-$(version).tar.gz
-main.SHA1SUM    := cde7073529e68a31e0149bc7ca0a38ea043386cc
+main.SHA1SUM    := 4f9c027e441a84e78b36f9c1a87bf1896216b5ff
 main.FILE	:= $(notdir $(main.URL))
 
 # Thierry - when called from within the build, PWD is /build
