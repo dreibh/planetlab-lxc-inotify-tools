@@ -1,4 +1,4 @@
-# $Id: Makefile 7299 2007-12-04 11:59:41Z thierry $
+# $Id$
 CURL	:= curl -H Pragma: -O -R -S --fail --show-error
 SHA1SUM	= sha1sum
 
@@ -7,7 +7,7 @@ SPECFILE = inotify-tools.spec
 
 version=3.13
 
-main.URL	:= http://dl.sf.net/inotify-tools/inotify-tools-$(version).tar.gz
+main.URL	:= http://mirror.onelab.eu/third-party/inotify-tools-$(version).tar.gz
 main.SHA1SUM    := cde7073529e68a31e0149bc7ca0a38ea043386cc
 main.FILE	:= $(notdir $(main.URL))
 
