@@ -1,10 +1,18 @@
 # $Id$
 # Authority: dag
 
+%define url $URL$
+
+%define name inotify-tools
+%define version 3.13
+%define taglevel 1
+
+%define release %{taglevel}%{?pldistro:.%{pldistro}}%{?date:.%{date}}
+
 Summary: Command line utilities for inotify
-Name: inotify-tools
-Version: 3.13
-Release: 1.rf
+Name: %{name}
+Version: %{version}
+Release: %{taglevel}.rf
 License: GPL
 Group: Applications/System
 URL: http://inotify-tools.sourceforge.net/
