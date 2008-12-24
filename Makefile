@@ -7,7 +7,7 @@ SPECFILE = inotify-tools.spec
 
 version=3.13
 
-main.URL	:= http://mirror.onelab.eu/third-party/inotify-tools-$(version).tar.gz
+main.URL	:= http://build.planet-lab.org/third-party/inotify-tools-$(version).tar.gz
 main.SHA1SUM    := 4f9c027e441a84e78b36f9c1a87bf1896216b5ff
 main.FILE	:= $(notdir $(main.URL))
 
