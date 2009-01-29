@@ -5,7 +5,7 @@
 
 %define name inotify-tools
 %define version 3.13
-%define taglevel 1
+%define taglevel 2
 
 %define release %{taglevel}%{?pldistro:.%{pldistro}}%{?date:.%{date}}
 
@@ -81,5 +81,8 @@ you will need to install %{name}-devel.
 %exclude %{_libdir}/libinotifytools.la
 
 %changelog
+* Thu Jan 29 2009 Thierry Parmentelat <thierry.parmentelat@sophia.inria.fr> - inotify-tools-3.13-2
+- pull source tarball from planet-lab.org rather than onelab.eu
+
 * Thu Mar 27 2008 Dag Wieers <dag@wieers.com> - 3.13-1 - +/
 - Initial package. (using DAR)
